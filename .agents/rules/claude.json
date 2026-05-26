@@ -1,0 +1,7 @@
+{
+  "model_provider": "anthropic",
+  "system_prompt_append": "You are strictly constrained by the operational rules specified in AGENTS.md. Prioritize surgical changes, preserve existing codebase style properties, and avoid inserting single-use abstractions.",
+  "validation_loop": {
+    "enforce_test_before_fix": true
+  }
+}

@@ -169,3 +169,18 @@ The goal is reducing costly mistakes on non-trivial work, not slowing down simpl
 ## License
 
 MIT
+
+## Antigravity Implementation
+
+This fork adds native orchestration files optimized for **Antigravity**. It routes the Karpathy guidelines into isolated runtime directives across both Google Gemini and Anthropic Claude agent configurations.
+
+### Usage in Antigravity
+
+1. Ensure `AGENTS.md` and the `.agents/` folder directory are located in your root workspace.
+2. When initializing a code generation task or fixing an issue, invoke the playbook command directly:
+   ```text
+   /goal Refactor the data parser logic using the @karpathy-guidelines skill. Ensure the loop stays minimal.
+   ```
+
+3. If an ambiguity threshold is hit, the agent will pause file writes and launch a `/grill-me` query panel to check for human instruction rather than making assumptions on your behalf.
+
